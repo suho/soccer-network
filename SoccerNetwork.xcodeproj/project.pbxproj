@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		998FEF241D8C04350069DDAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FEF231D8C04350069DDAF /* AppDelegate.swift */; };
-		998FEF2B1D8C04350069DDAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 998FEF2A1D8C04350069DDAF /* Assets.xcassets */; };
-		998FEF2E1D8C04350069DDAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 998FEF2C1D8C04350069DDAF /* LaunchScreen.storyboard */; };
+		99E03B8A1D8C10C5002380E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E03B831D8C10C5002380E7 /* AppDelegate.swift */; };
+		99E03B8B1D8C10C5002380E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99E03B851D8C10C5002380E7 /* LaunchScreen.storyboard */; };
+		99E03B8C1D8C10C5002380E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99E03B871D8C10C5002380E7 /* Assets.xcassets */; };
+		99E03B8D1D8C10C5002380E7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99E03B891D8C10C5002380E7 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		998FEF201D8C04350069DDAF /* SoccerNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoccerNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		998FEF231D8C04350069DDAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		998FEF2A1D8C04350069DDAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		998FEF2D1D8C04350069DDAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		998FEF2F1D8C04350069DDAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99E03B831D8C10C5002380E7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		99E03B851D8C10C5002380E7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		99E03B871D8C10C5002380E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99E03B891D8C10C5002380E7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +51,52 @@
 		998FEF221D8C04350069DDAF /* SoccerNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				998FEF231D8C04350069DDAF /* AppDelegate.swift */,
-				998FEF2A1D8C04350069DDAF /* Assets.xcassets */,
-				998FEF2C1D8C04350069DDAF /* LaunchScreen.storyboard */,
-				998FEF2F1D8C04350069DDAF /* Info.plist */,
+				99E03B811D8C10C5002380E7 /* Controllers */,
+				99E03B861D8C10C5002380E7 /* Resources */,
+				99E03B881D8C10C5002380E7 /* Support */,
 			);
 			path = SoccerNetwork;
+			sourceTree = "<group>";
+		};
+		99E03B811D8C10C5002380E7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				99E03B821D8C10C5002380E7 /* AppDelegate */,
+				99E03B841D8C10C5002380E7 /* LaunchScreen */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		99E03B821D8C10C5002380E7 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				99E03B831D8C10C5002380E7 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		99E03B841D8C10C5002380E7 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				99E03B851D8C10C5002380E7 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		99E03B861D8C10C5002380E7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				99E03B871D8C10C5002380E7 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		99E03B881D8C10C5002380E7 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				99E03B891D8C10C5002380E7 /* Info.plist */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,8 +157,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				998FEF2E1D8C04350069DDAF /* LaunchScreen.storyboard in Resources */,
-				998FEF2B1D8C04350069DDAF /* Assets.xcassets in Resources */,
+				99E03B8C1D8C10C5002380E7 /* Assets.xcassets in Resources */,
+				99E03B8B1D8C10C5002380E7 /* LaunchScreen.storyboard in Resources */,
+				99E03B8D1D8C10C5002380E7 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,22 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				998FEF241D8C04350069DDAF /* AppDelegate.swift in Sources */,
+				99E03B8A1D8C10C5002380E7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		998FEF2C1D8C04350069DDAF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				998FEF2D1D8C04350069DDAF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		998FEF301D8C04350069DDAF /* Debug */ = {
@@ -234,8 +265,9 @@
 		998FEF331D8C04350069DDAF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = SoccerNetwork/Info.plist;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = "$(SRCROOT)/SoccerNetwork/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.suhv.SoccerNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -245,8 +277,9 @@
 		998FEF341D8C04350069DDAF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = SoccerNetwork/Info.plist;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = "$(SRCROOT)/SoccerNetwork/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.suhv.SoccerNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,6 +305,7 @@
 				998FEF341D8C04350069DDAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
