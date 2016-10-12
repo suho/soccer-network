@@ -31,44 +31,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func loginViewController() -> UIViewController {
-        let loginViewController = LoginViewController(nibName: "LoginViewController", bundle: nil)
+        let loginViewController = LoginViewController()
         loginViewController.title = "Login"
         let loginNavigationController = UINavigationController(rootViewController: loginViewController)
         return loginNavigationController
     }
     
     func mainTabBarController() -> UITabBarController {
-        let mainTabBarController: UITabBarController = UITabBarController()
-        mainTabBarController.viewControllers = [fieldsViewController(), matchsViewController(), profileViewController()]
-        mainTabBarController.selectedIndex = 1
-        return mainTabBarController
-    }
-    
-    func fieldsViewController() -> UIViewController {
-        let fieldsViewController = FieldsViewController(nibName: "FieldsViewController", bundle: nil)
-        fieldsViewController.title = "Fields"
-        let fieldsNavigationController = UINavigationController(rootViewController: fieldsViewController)
-        fieldsNavigationController.title = fieldsViewController.title
-        fieldsNavigationController.tabBarItem.image = UIImage(named: "stadium_ic")?.withRenderingMode(.automatic)
-        return fieldsNavigationController
-    }
-    
-    func matchsViewController() -> UIViewController {
-        let matchsViewController = MatchsViewController(nibName: "MatchsViewController", bundle: nil)
-        matchsViewController.title = "Matchs"
-        let matchsNavigationController = UINavigationController(rootViewController: matchsViewController)
-        matchsNavigationController.title = matchsViewController.title
-        matchsNavigationController.tabBarItem.image = UIImage(named: "football_ic")?.withRenderingMode(.automatic)
-        return matchsNavigationController
-    }
-    
-    func profileViewController() -> UIViewController {
-        let profileViewController = ProfileViewController(nibName: "ProfileViewController", bundle: nil)
-        profileViewController.title = "Profile"
-        let profileNavigationController = UINavigationController(rootViewController: profileViewController)
-        profileNavigationController.title = profileViewController.title
-        profileNavigationController.tabBarItem.image = UIImage(named: "profile_ic")?.withRenderingMode(.automatic)
-        return profileNavigationController
+        return MainTabBarViewController()
     }
     
 }

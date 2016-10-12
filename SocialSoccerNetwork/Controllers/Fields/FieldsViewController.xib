@@ -1,12 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FieldsViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FieldsViewController" customModule="SocialSoccerNetwork" customModuleProvider="target">
             <connections>
+                <outlet property="fieldsSearchBar" destination="8CV-dS-yT0" id="egu-fp-nXL"/>
+                <outlet property="fieldsTableView" destination="mG3-GB-BLg" id="Vd7-dp-ImQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +17,27 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="8CV-dS-yT0">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="oPP-TL-nks"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mG3-GB-BLg">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8CV-dS-yT0" secondAttribute="trailing" id="2c1-cZ-mj9"/>
+                <constraint firstItem="mG3-GB-BLg" firstAttribute="top" secondItem="8CV-dS-yT0" secondAttribute="bottom" id="9f1-nY-v6X"/>
+                <constraint firstAttribute="trailing" secondItem="mG3-GB-BLg" secondAttribute="trailing" id="OSD-Hk-Suz"/>
+                <constraint firstItem="8CV-dS-yT0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="epc-XR-VF8"/>
+                <constraint firstItem="8CV-dS-yT0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qHw-vJ-3r4"/>
+                <constraint firstItem="mG3-GB-BLg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xxj-x8-tv3"/>
+                <constraint firstAttribute="bottom" secondItem="mG3-GB-BLg" secondAttribute="bottom" id="yuJ-tf-b6D"/>
+            </constraints>
         </view>
     </objects>
 </document>

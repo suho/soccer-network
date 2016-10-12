@@ -13,6 +13,7 @@
 		990949C51DAD41D800C80096 /* MatchsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 990949C31DAD41D800C80096 /* MatchsViewController.xib */; };
 		990949C81DAD41E500C80096 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990949C61DAD41E500C80096 /* ProfileViewController.swift */; };
 		990949C91DAD41E500C80096 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 990949C71DAD41E500C80096 /* ProfileViewController.xib */; };
+		995F7ACB1DAE99C0001574EC /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995F7ACA1DAE99C0001574EC /* MainTabBarViewController.swift */; };
 		999F8C4E1DAAB1D200C4EA14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999F8C4A1DAAB1D200C4EA14 /* AppDelegate.swift */; };
 		999F8C521DAAB1DD00C4EA14 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999F8C501DAAB1DD00C4EA14 /* LoginViewController.swift */; };
 		999F8C541DAAB2FD00C4EA14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999F8C4C1DAAB1D200C4EA14 /* LaunchScreen.storyboard */; };
@@ -31,6 +32,7 @@
 		990949C61DAD41E500C80096 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		990949C71DAD41E500C80096 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		99140B471DAAB10000F4362C /* SocialSoccerNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialSoccerNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		995F7ACA1DAE99C0001574EC /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		999F8C3E1DAAB1AB00C4EA14 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		999F8C421DAAB1AB00C4EA14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		999F8C4A1DAAB1D200C4EA14 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,10 +132,27 @@
 			path = SocialSoccerNetwork;
 			sourceTree = "<group>";
 		};
+		995F7AC81DAE9995001574EC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				995F7AC91DAE9995001574EC /* MainTabBar */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		995F7AC91DAE9995001574EC /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				995F7ACA1DAE99C0001574EC /* MainTabBarViewController.swift */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
 		999F8C381DAAB1AB00C4EA14 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				999F8C491DAAB1D200C4EA14 /* AppDelegate */,
+				995F7AC81DAE9995001574EC /* Base */,
 				990949BB1DAD419900C80096 /* Fields */,
 				999F8C4B1DAAB1D200C4EA14 /* LaunchScreen */,
 				999F8C4D1DAAB1D200C4EA14 /* Login */,
@@ -356,6 +375,7 @@
 				990949C41DAD41D800C80096 /* MatchsViewController.swift in Sources */,
 				999F8C521DAAB1DD00C4EA14 /* LoginViewController.swift in Sources */,
 				990949C81DAD41E500C80096 /* ProfileViewController.swift in Sources */,
+				995F7ACB1DAE99C0001574EC /* MainTabBarViewController.swift in Sources */,
 				999F8C4E1DAAB1D200C4EA14 /* AppDelegate.swift in Sources */,
 				990949C01DAD41CA00C80096 /* FieldsViewController.swift in Sources */,
 			);
