@@ -19,6 +19,8 @@
 		999F8C541DAAB2FD00C4EA14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999F8C4C1DAAB1D200C4EA14 /* LaunchScreen.storyboard */; };
 		999F8C551DAAB2FD00C4EA14 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 999F8C511DAAB1DD00C4EA14 /* LoginViewController.xib */; };
 		999F8C571DAAB32800C4EA14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 999F8C421DAAB1AB00C4EA14 /* Assets.xcassets */; };
+		99CB354A1DAFCD8400EDAD2B /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CB35481DAFCD8400EDAD2B /* SignupViewController.swift */; };
+		99CB354B1DAFCD8400EDAD2B /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99CB35491DAFCD8400EDAD2B /* SignupViewController.xib */; };
 		E82E9153A7BF9B417C7E4044 /* Pods_SocialSoccerNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB53C817C077A2F55472F4DC /* Pods_SocialSoccerNetwork.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		999F8C4C1DAAB1D200C4EA14 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		999F8C501DAAB1DD00C4EA14 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		999F8C511DAAB1DD00C4EA14 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		99CB35481DAFCD8400EDAD2B /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		99CB35491DAFCD8400EDAD2B /* SignupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
 		EB53C817C077A2F55472F4DC /* Pods_SocialSoccerNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialSoccerNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -158,6 +162,7 @@
 				999F8C4D1DAAB1D200C4EA14 /* Login */,
 				990949BC1DAD41A400C80096 /* Matchs */,
 				990949BD1DAD41A400C80096 /* Profile */,
+				99CB35471DAFCD6800EDAD2B /* Signup */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -245,6 +250,15 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		99CB35471DAFCD6800EDAD2B /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				99CB35481DAFCD8400EDAD2B /* SignupViewController.swift */,
+				99CB35491DAFCD8400EDAD2B /* SignupViewController.xib */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -313,6 +327,7 @@
 				990949C51DAD41D800C80096 /* MatchsViewController.xib in Resources */,
 				999F8C541DAAB2FD00C4EA14 /* LaunchScreen.storyboard in Resources */,
 				999F8C551DAAB2FD00C4EA14 /* LoginViewController.xib in Resources */,
+				99CB354B1DAFCD8400EDAD2B /* SignupViewController.xib in Resources */,
 				990949C11DAD41CA00C80096 /* FieldsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				990949C41DAD41D800C80096 /* MatchsViewController.swift in Sources */,
+				99CB354A1DAFCD8400EDAD2B /* SignupViewController.swift in Sources */,
 				999F8C521DAAB1DD00C4EA14 /* LoginViewController.swift in Sources */,
 				990949C81DAD41E500C80096 /* ProfileViewController.swift in Sources */,
 				995F7ACB1DAE99C0001574EC /* MainTabBarViewController.swift in Sources */,

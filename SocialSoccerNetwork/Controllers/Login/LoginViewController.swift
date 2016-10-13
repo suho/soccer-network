@@ -30,5 +30,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func signUpAction(_ sender: AnyObject) {
+        let signUpViewController = SignupViewController()
+        navigationController?.pushViewController(signUpViewController, animated: true)
     }
 }
