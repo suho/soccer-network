@@ -17,6 +17,7 @@ class LoginViewController: UIViewController {
     // MARK:- Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureNavigationBar()
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,5 +33,10 @@ class LoginViewController: UIViewController {
     @IBAction func signUpAction(_ sender: AnyObject) {
         let signUpViewController = SignupViewController()
         navigationController?.pushViewController(signUpViewController, animated: true)
+    }
+    
+    // MARK:- Private Function
+    private func configureNavigationBar() {
+        self.navigationController?.navigationBar.isHidden = true
     }
 }

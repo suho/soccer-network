@@ -13,6 +13,8 @@
 		990949C51DAD41D800C80096 /* MatchsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 990949C31DAD41D800C80096 /* MatchsViewController.xib */; };
 		990949C81DAD41E500C80096 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990949C61DAD41E500C80096 /* ProfileViewController.swift */; };
 		990949C91DAD41E500C80096 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 990949C71DAD41E500C80096 /* ProfileViewController.xib */; };
+		994534A31DB1432D00466FB6 /* FieldsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994534A11DB1432D00466FB6 /* FieldsTableViewCell.swift */; };
+		994534A41DB1432D00466FB6 /* FieldsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 994534A21DB1432D00466FB6 /* FieldsTableViewCell.xib */; };
 		995F7ACB1DAE99C0001574EC /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995F7ACA1DAE99C0001574EC /* MainTabBarViewController.swift */; };
 		999F8C4E1DAAB1D200C4EA14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999F8C4A1DAAB1D200C4EA14 /* AppDelegate.swift */; };
 		999F8C521DAAB1DD00C4EA14 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999F8C501DAAB1DD00C4EA14 /* LoginViewController.swift */; };
@@ -34,6 +36,8 @@
 		990949C61DAD41E500C80096 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		990949C71DAD41E500C80096 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		99140B471DAAB10000F4362C /* SocialSoccerNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialSoccerNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		994534A11DB1432D00466FB6 /* FieldsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldsTableViewCell.swift; sourceTree = "<group>"; };
+		994534A21DB1432D00466FB6 /* FieldsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FieldsTableViewCell.xib; sourceTree = "<group>"; };
 		995F7ACA1DAE99C0001574EC /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		999F8C3E1DAAB1AB00C4EA14 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		999F8C421DAAB1AB00C4EA14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,6 +140,15 @@
 			path = SocialSoccerNetwork;
 			sourceTree = "<group>";
 		};
+		994534A01DB1431800466FB6 /* FieldsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				994534A11DB1432D00466FB6 /* FieldsTableViewCell.swift */,
+				994534A21DB1432D00466FB6 /* FieldsTableViewCell.xib */,
+			);
+			path = FieldsTableViewCell;
+			sourceTree = "<group>";
+		};
 		995F7AC81DAE9995001574EC /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +234,7 @@
 		999F8C441DAAB1AB00C4EA14 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				994534A01DB1431800466FB6 /* FieldsTableViewCell */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -324,6 +338,7 @@
 			files = (
 				990949C91DAD41E500C80096 /* ProfileViewController.xib in Resources */,
 				999F8C571DAAB32800C4EA14 /* Assets.xcassets in Resources */,
+				994534A41DB1432D00466FB6 /* FieldsTableViewCell.xib in Resources */,
 				990949C51DAD41D800C80096 /* MatchsViewController.xib in Resources */,
 				999F8C541DAAB2FD00C4EA14 /* LaunchScreen.storyboard in Resources */,
 				999F8C551DAAB2FD00C4EA14 /* LoginViewController.xib in Resources */,
@@ -393,6 +408,7 @@
 				990949C81DAD41E500C80096 /* ProfileViewController.swift in Sources */,
 				995F7ACB1DAE99C0001574EC /* MainTabBarViewController.swift in Sources */,
 				999F8C4E1DAAB1D200C4EA14 /* AppDelegate.swift in Sources */,
+				994534A31DB1432D00466FB6 /* FieldsTableViewCell.swift in Sources */,
 				990949C01DAD41CA00C80096 /* FieldsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +434,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -468,6 +485,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

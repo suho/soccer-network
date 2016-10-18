@@ -9,6 +9,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FieldsViewController" customModule="SocialSoccerNetwork" customModuleProvider="target">
             <connections>
                 <outlet property="fieldsSearchBar" destination="8CV-dS-yT0" id="egu-fp-nXL"/>
+                <outlet property="fieldsSearchBarHeightConstraint" destination="oPP-TL-nks" id="LmR-WL-Esp"/>
                 <outlet property="fieldsTableView" destination="mG3-GB-BLg" id="Vd7-dp-ImQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -25,7 +26,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mG3-GB-BLg">
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="1" green="0.98428535900000003" blue="0.9227579856" alpha="1" colorSpace="calibratedRGB"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -36,7 +37,7 @@
                 <constraint firstItem="8CV-dS-yT0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="epc-XR-VF8"/>
                 <constraint firstItem="8CV-dS-yT0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qHw-vJ-3r4"/>
                 <constraint firstItem="mG3-GB-BLg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xxj-x8-tv3"/>
-                <constraint firstAttribute="bottom" secondItem="mG3-GB-BLg" secondAttribute="bottom" id="yuJ-tf-b6D"/>
+                <constraint firstAttribute="bottom" secondItem="mG3-GB-BLg" secondAttribute="bottom" constant="49" id="yuJ-tf-b6D"/>
             </constraints>
         </view>
     </objects>

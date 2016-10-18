@@ -17,9 +17,35 @@ class MatchsViewController: UIViewController {
     // MARK:- Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureTableView()
+        configureSearchBar()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    // MARK:- Private Function
+    private func configureTableView() {
+        matchsTableView.delegate = self
+    }
+    
+    private func configureSearchBar() {
+        matchsSearchBar.delegate = self
+    }
+}
+
+// MARK:- UITableViewDelegate
+extension MatchsViewController: UITableViewDelegate {
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        matchsSearchBar.endEditing(true)
+    }
+}
+
+// MARK:- 
+extension MatchsViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        matchsSearchBar.text = ""
+        matchsSearchBar.endEditing(true)
     }
 }

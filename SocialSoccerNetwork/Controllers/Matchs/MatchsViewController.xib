@@ -34,7 +34,7 @@
                 <constraint firstAttribute="trailing" secondItem="EFi-GN-FdT" secondAttribute="trailing" id="N1G-Fq-Ml9"/>
                 <constraint firstItem="cRU-sP-Byz" firstAttribute="top" secondItem="EFi-GN-FdT" secondAttribute="bottom" id="NRx-6D-HGp"/>
                 <constraint firstItem="cRU-sP-Byz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Qp6-mQ-FTT"/>
-                <constraint firstAttribute="bottom" secondItem="cRU-sP-Byz" secondAttribute="bottom" id="UDx-dD-lnE"/>
+                <constraint firstAttribute="bottom" secondItem="cRU-sP-Byz" secondAttribute="bottom" constant="49" id="UDx-dD-lnE"/>
                 <constraint firstAttribute="trailing" secondItem="cRU-sP-Byz" secondAttribute="trailing" id="YGs-QP-MwH"/>
                 <constraint firstItem="EFi-GN-FdT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="ZB0-Vq-F1T"/>
             </constraints>
