@@ -20,6 +20,8 @@ class FieldsTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         selectionStyle = .none
+        visibleView.layer.borderColor = UIColor.gray.cgColor
+        visibleView.layer.borderWidth = 0.5
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

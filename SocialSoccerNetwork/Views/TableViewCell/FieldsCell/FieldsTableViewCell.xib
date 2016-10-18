@@ -13,7 +13,7 @@
             <rect key="frame" x="0.0" y="0.0" width="398" height="120"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="398" height="119.5"/>
+                <frame key="frameInset" width="398" height="119"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NgM-uv-Ufi">
@@ -26,7 +26,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lô A5 Phạm Văn Đồng, Quận Sơn Trà, Đà Nẵng" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ea7-uP-8B8">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lô A5 Phạm Văn Đồng, Quận Sơn Trà, Đà Nẵng" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ea7-uP-8B8">
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -44,12 +44,12 @@
                                     <constraint firstAttribute="trailing" secondItem="Vcx-Ay-Vm1" secondAttribute="trailing" constant="3" id="SDj-rb-skq"/>
                                     <constraint firstItem="ea7-uP-8B8" firstAttribute="top" secondItem="0N5-H1-yeQ" secondAttribute="bottom" id="VCV-Op-Swo"/>
                                     <constraint firstItem="0N5-H1-yeQ" firstAttribute="top" secondItem="fbj-ax-2sN" secondAttribute="top" id="WDv-Lk-Azm"/>
-                                    <constraint firstItem="ea7-uP-8B8" firstAttribute="leading" secondItem="fbj-ax-2sN" secondAttribute="leading" constant="3" id="eEn-wI-18b"/>
-                                    <constraint firstItem="0N5-H1-yeQ" firstAttribute="leading" secondItem="fbj-ax-2sN" secondAttribute="leading" constant="3" id="eLZ-hf-xXC"/>
+                                    <constraint firstItem="ea7-uP-8B8" firstAttribute="leading" secondItem="fbj-ax-2sN" secondAttribute="leading" constant="5" id="eEn-wI-18b"/>
+                                    <constraint firstItem="0N5-H1-yeQ" firstAttribute="leading" secondItem="fbj-ax-2sN" secondAttribute="leading" constant="5" id="eLZ-hf-xXC"/>
                                     <constraint firstAttribute="bottom" secondItem="Vcx-Ay-Vm1" secondAttribute="bottom" id="od2-S0-iss"/>
                                     <constraint firstItem="Vcx-Ay-Vm1" firstAttribute="height" secondItem="0N5-H1-yeQ" secondAttribute="height" id="te1-6R-LuF"/>
                                     <constraint firstItem="Vcx-Ay-Vm1" firstAttribute="top" secondItem="ea7-uP-8B8" secondAttribute="bottom" id="y2z-Zx-QVz"/>
-                                    <constraint firstItem="Vcx-Ay-Vm1" firstAttribute="leading" secondItem="fbj-ax-2sN" secondAttribute="leading" constant="3" id="zAM-MV-DdN"/>
+                                    <constraint firstItem="Vcx-Ay-Vm1" firstAttribute="leading" secondItem="fbj-ax-2sN" secondAttribute="leading" constant="5" id="zAM-MV-DdN"/>
                                     <constraint firstAttribute="trailing" secondItem="ea7-uP-8B8" secondAttribute="trailing" constant="3" id="zSI-T9-PbQ"/>
                                 </constraints>
                             </view>

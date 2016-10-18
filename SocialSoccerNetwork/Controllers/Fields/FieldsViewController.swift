@@ -82,6 +82,11 @@ extension FieldsViewController: UITableViewDelegate {
             showSearchBar()
         }
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let fieldDetailViewController = FieldDetailViewController()
+        fieldDetailViewController.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(fieldDetailViewController, animated: true)
+    }
 }
 
 // MARK:- UITableViewDataSource
